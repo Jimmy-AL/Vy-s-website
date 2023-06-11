@@ -1,6 +1,7 @@
 {
   "name": "truck",
   "version": "0.1.0",
+  "homepage": "https://jimmy-al.github.io/truck/",
   "private": true,
   "dependencies": {
     "@heroicons/react": "^2.0.18",
