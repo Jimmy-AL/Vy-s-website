@@ -12,13 +12,13 @@ const Navbar = () => {
                 <a href="/">HOME</a>
             </span>
             <span className="hover:transition-all hover:font-bold hover:bg-sky-900 self-center p-9">
-                <a href="/services">SERVICES</a>
+                <a href="/truck/services">SERVICES</a>
             </span>
             <span className="hover:transition-all hover:font-bold hover:bg-sky-900 self-center p-9">
-                <a href="/about">ABOUT US</a>
+                <a href="/truck/about">ABOUT US</a>
             </span>
             <span className="hover:transition-all hover:font-bold hover:bg-sky-900 self-center p-9">
-                <a href="/contact">CONTACT</a>
+                <a href="/truck/contact">CONTACT</a>
             </span>
         </div>
     </div>
