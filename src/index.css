@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +15,22 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.navbar-bg {
+  background-color: #0E1952;
+}
+
+.footer-colour {
+  background-color: #2F3863;
+}
+
+h3 {
+  font-size: xx-large;
+  font-weight: 600;
+}
+
+.error-message{
+  color: rgb(255, 48, 48);
+  font-weight: 700;
 }
