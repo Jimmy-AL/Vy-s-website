@@ -9,7 +9,7 @@ const Navbar = () => {
                 className="max-h-24 my-2 justify-self-center" 
             ></img>
             <span className="hover:transition-all hover:font-bold hover:bg-sky-900 self-center p-9">
-                <a href="/">HOME</a>
+                <a href="/truck">HOME</a>
             </span>
             <span className="hover:transition-all hover:font-bold hover:bg-sky-900 self-center p-9">
                 <a href="/truck/services">SERVICES</a>

@@ -12,7 +12,7 @@ export const Footer = () => {
                 <div className="flex justify-center justify-self-start">
                     <ul className="list-none text-3xl font-bold">
                         <li className="my-10">
-                            <a href="/">HOME</a>
+                            <a href="/truck">HOME</a>
                         </li>
                         <li className="mb-10">
                             <a href="/truck/about">ABOUT US</a>
