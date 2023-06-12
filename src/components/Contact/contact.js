@@ -8,6 +8,7 @@ export const Contact = () => {
     const { register, handleSubmit, getValues, formState: { errors }} = useForm();
     const [ group, setGroup ] = useState(0)
     const [ submit, setSubmit ] = useState(0)
+    const [ emailFail, setEmailFail ] = useState(0)
 
 
     const onSubmit = e => {
@@ -22,10 +23,13 @@ export const Contact = () => {
             .then((result) => {
                 console.log('success')
                 console.log(result.text);
+                setEmailFail(0);
                 setSubmit(1)
             }, (error) => {
                 console.log('error')
                 console.log(error.text);
+                setSubmit(0);
+                setEmailFail(1);
             });
     }
 
@@ -59,7 +63,11 @@ export const Contact = () => {
                 </div>
                 <div className='flex text-2xl justify-center mb-20'>
                     {submit
-                        ? <p>[Thank you message.]</p>
+                        ? <p>Your message has been delivered. Thank you for contacting us and we will reply to your email as soon as possible.</p>
+                        : <></>
+                    }
+                    {emailFail
+                        ? <p className='error-message'>[Sorry, we were unable to deliver your message. Please contact us directly through E-mail or give us a call.]</p>
                         : <></>
                     }
                 </div>
@@ -78,7 +86,11 @@ export const Contact = () => {
                 </div>
                 <div className='flex text-2xl justify-center mb-20'>
                     {submit
-                        ? <p>[Thank you message.]</p>
+                        ? <p>Your message has been delivered. Thank you for contacting us and we will reply to your email as soon as possible.</p>
+                        : <></>
+                    }
+                    {emailFail
+                        ? <p className='error-message'>[Sorry, we were unable to deliver your message. Please contact us directly through E-mail or give us a call.]</p>
                         : <></>
                     }
                 </div>
