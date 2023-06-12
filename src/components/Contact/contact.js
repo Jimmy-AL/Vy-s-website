@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useForm } from "react-hook-form"
 import { Input } from '../Input/input';
 import { Select } from '../Select/select';
+import emailjs from '@emailjs/browser'
 
 export const Contact = () => {
     const { register, handleSubmit, getValues, formState: { errors }} = useForm();
@@ -9,9 +10,23 @@ export const Contact = () => {
     const [ submit, setSubmit ] = useState(0)
 
 
-    const onSubmit = data => {
-        console.log(data);
-        setSubmit(submit + 1);
+    const onSubmit = e => {
+        
+        emailjs.send('service_lswu8bj', 'template_fqu0d2h', {
+            last_name: e.last_name, 
+            first_name: e.first_name, 
+            org: e.org, 
+            email: e.email, 
+            msg: e.msg,
+        }, '0jhwV1eeQARikLpqn')
+            .then((result) => {
+                console.log('success')
+                console.log(result.text);
+                setSubmit(1)
+            }, (error) => {
+                console.log('error')
+                console.log(error.text);
+            });
     }
 
     const updateGroup = e => {
