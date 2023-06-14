@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/truck/static/css/main.fcb98155.css",
-    "main.js": "/truck/static/js/main.786189df.js",
+    "main.js": "/truck/static/js/main.feb69239.js",
     "static/js/787.81710461.chunk.js": "/truck/static/js/787.81710461.chunk.js",
     "index.html": "/truck/index.html",
     "main.fcb98155.css.map": "/truck/static/css/main.fcb98155.css.map",
-    "main.786189df.js.map": "/truck/static/js/main.786189df.js.map",
+    "main.feb69239.js.map": "/truck/static/js/main.feb69239.js.map",
     "787.81710461.chunk.js.map": "/truck/static/js/787.81710461.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fcb98155.css",
-    "static/js/main.786189df.js"
+    "static/js/main.feb69239.js"
   ]
 }
